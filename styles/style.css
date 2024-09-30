@@ -125,6 +125,23 @@ input, button, fieldset, textarea, select {
   margin-right: 0;
 }
 
+input:focus {
+  outline: none;
+}
+
+input:focus-visible:not(:active) {
+  outline: 1px solid #fff;
+  outline-offset: 2px;
+}
+
+input:active {
+  border: 1px solid #fff;
+}
+
+input:hover {
+  cursor: text;
+}
+
 .search-form__textfield {
   width: 225px;
   background-color: transparent;
@@ -159,6 +176,19 @@ input, button, fieldset, textarea, select {
   background-color: #fff;
 }
 
+label:focus-within {
+  outline: 1px solid #fff;
+}
+
+label .search-form__label-text:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+label .search-form__textfield:hover {
+  text-decoration: none;
+}
+
 .button {
   align-self: end;
   background-color: transparent;
@@ -171,13 +201,26 @@ input, button, fieldset, textarea, select {
   align-self: end;
 }
 
+button:active {
+  background-color: #545050;
+}
+
+button:hover {
+  text-decoration: underline;
+}
+
+button:focus {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
 .search-form__submit-button{
   width: 194px;
   height: 34px;
 }
 
 .more-button {
-  width: 100%;
+  width: 397px;
   height: 34px;
 }
 
@@ -196,8 +239,9 @@ input, button, fieldset, textarea, select {
 
 .content__details {
   margin-bottom: 22px;
-  display: grid;
-  width: 399px;
+  display: flex;
+  flex-direction: column;
+  width: 397px;
   height: 100%;
 }
 
@@ -212,7 +256,7 @@ input, button, fieldset, textarea, select {
 }
 
 .content__list-item {
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 }
 
 .content__list-item:last-child {
@@ -227,6 +271,7 @@ input, button, fieldset, textarea, select {
 .content__video-card {
   display: flex;
   align-items: start;
+  justify-content: start;
 }
 
 .content__video-card-title {
@@ -235,7 +280,8 @@ input, button, fieldset, textarea, select {
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
+  margin-right: 2px;
 }
 
 .content__video-card-description {
@@ -245,8 +291,24 @@ input, button, fieldset, textarea, select {
 }
 
 .content__video-card-description-container {
-  padding: 2px;
-  width: 200px;
+  flex-grow: 1;
+}
+
+article:active {
+  background-color: #545050;
+}
+
+article:hover {
+  text-decoration: underline;
+}
+
+article:focus {
+  outline: 1px solid #fff;
+}
+
+article:focus-visible:not(:active) {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
 }
 
 .content__video-card-thumbnail {
