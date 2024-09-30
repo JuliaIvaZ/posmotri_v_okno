@@ -58,8 +58,9 @@ input, button, fieldset, textarea, select {
 }
 
 .result {
+  margin-bottom: 22px;
   width: 711px;
-  height: 463px; /*456px;*/
+  height: 456px;
   display: grid;
   align-content: space-between;
 }
@@ -194,8 +195,8 @@ input, button, fieldset, textarea, select {
 }
 
 .content__details {
+  margin-bottom: 22px;
   display: grid;
-  gap: 26px;
   width: 399px;
   height: 100%;
 }
@@ -206,12 +207,12 @@ input, button, fieldset, textarea, select {
   overflow: auto;
 }
 
-/*.title {
-  margin-bottom: 26px;
-}*/
+.title {
+  margin-bottom: 22px;
+}
 
 .content__list-item {
-  margin-bottom: 34px;
+  margin-bottom: 32px;
 }
 
 .content__list-item:last-child {
