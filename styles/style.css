@@ -16,7 +16,6 @@ html {
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
-  margin-top: 5px;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
@@ -50,6 +49,8 @@ input, button, fieldset, textarea, select {
 }
 
 .content {
+  margin-top: 0;
+  margin-bottom: 10px;
   width: 1140px;
   display: flex;
   justify-content: space-between;
@@ -58,9 +59,6 @@ input, button, fieldset, textarea, select {
 }
 
 .result {
-  margin-bottom: 22px;
-  width: 711px;
-  height: 456px;
   display: grid;
   align-content: space-between;
 }
@@ -68,6 +66,8 @@ input, button, fieldset, textarea, select {
 .result__video-container {
   margin-top: 0;
   margin-bottom: 16px;
+  width: 711px;
+  height: 456px;
   position: relative;
   width: 711px;
   height: 386px;
@@ -119,6 +119,7 @@ input, button, fieldset, textarea, select {
 .search-form__label {
   display: flex;
   margin-right: 15px;
+  cursor: pointer;
 }
 
 .search-form__label:last-child {
@@ -156,7 +157,7 @@ input:hover {
 }
 
 .search-form__textfield::placeholder {
-  color: currentColor 0.3;
+  color: rgb (255 255 255 / 0.3);
 }
 
 .search-form__pseudo-checkbox {
@@ -187,12 +188,8 @@ label:focus-within {
   outline: 1px solid #fff;
 }
 
-label .search-form__label-text:hover {
+.search-form__label:has(.search-form__pseudo-checkbox):hover {
   text-decoration: underline;
-}
-
-label:hover {
-  cursor: pointer;
 }
 
 label .search-form__textfield:hover {
@@ -229,11 +226,12 @@ button:focus {
 }
 
 .more-button {
-  width: 397px;
+  width: 395px;
   height: 34px;
 }
 
 .title {
+  min-width: 260px;
   font-family: 'Oswald', sans-serif;
   font-size: 75px;
   font-weight: 700;
@@ -241,7 +239,6 @@ button:focus {
   line-height: 70.5px;
   color: #fff;
   margin-bottom: 22px;
-  margin-left: 0;
 }
 
 .content__accent {
@@ -249,18 +246,17 @@ button:focus {
 }
 
 .content__details {
-  margin-bottom: 22px;
   display: flex;
   flex-direction: column;
   width: 397px;
   min-height: 103px;
-  overflow: auto;
 }
 
 .content__list {
   position: relative;
-  width: 397px;
+  width: 415px;
   height: 298px;
+  overflow: auto;
 }
 
 .content__list-item {
@@ -283,7 +279,7 @@ button:focus {
 .content__video-card {
   margin-right: 1px;
   display: flex;
-  align-items: start;
+  align-items: space-between;
   justify-content: start;
 }
 
@@ -306,29 +302,29 @@ button:focus {
 }
 
 .content__video-card-description-container {
-  width: 197px;
+  width: 199px;
 }
 
-a:active {
+.content__card-link:active {
   background-color: #545050;
   outline: none;
 }
 
-a:hover {
+.content__card-link:hover {
   text-decoration: underline;
 }
 
-a:focus {
+.content__card-link:focus {
   outline: none;
 }
 
-a:focus-visible {
+.content__card-link:focus-visible {
   outline: 1px solid #fff;
   outline-offset: 1px;
 }
 
 .content__video-card-thumbnail {
-  min-width: 198px;
+  min-width: 193px;
   height: 103px;
   object-fit: cover;
   object-position: center;
