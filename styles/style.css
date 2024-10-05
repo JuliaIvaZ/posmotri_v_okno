@@ -67,10 +67,8 @@ input, button, fieldset, textarea, select {
   margin-top: 0;
   margin-bottom: 16px;
   width: 711px;
-  height: 456px;
-  position: relative;
-  width: 711px;
   height: 386px;
+  position: relative;
 }
 
 .result__video {
@@ -157,7 +155,7 @@ input:hover {
 }
 
 .search-form__textfield::placeholder {
-  color: rgb (255 255 255 / 0.3);
+  color: rgb(255 255 255 / 0.3);
 }
 
 .search-form__pseudo-checkbox {
@@ -277,14 +275,16 @@ button:focus {
 }
 
 .content__video-card {
+  margin-top: 2px;
   margin-right: 1px;
+  margin-bottom: 4px;
+  margin-left: 2px;
   display: flex;
-  align-items: space-between;
   justify-content: start;
 }
 
 .content__video-card-title {
-  margin-bottom: 4px;
+  margin-bottom: 6px;
   overflow: hidden;
   font-family: 'Oswald', sans-serif;
   font-size: 30px;
@@ -312,6 +312,7 @@ button:focus {
 
 .content__card-link:hover {
   text-decoration: underline;
+  line-height: 100%;
 }
 
 .content__card-link:focus {
